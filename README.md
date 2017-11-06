@@ -13,3 +13,7 @@ Futher thoughts:
 a)more data processing: oversampling/ downsampling
 
 b) XGBoost
+
+
+### update:
+Added a new ipython notebook which added an exploration using XGBoost on the dataset at the end. The roc_auc score has a slight increase from 0.755 to 0.767 on the validation set.
