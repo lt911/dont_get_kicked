@@ -12,8 +12,16 @@ Futher thoughts:
 
 a)more data processing: oversampling/ downsampling
 
-b) XGBoost
-
+b) Neural network on name entity embedding rather using categorical or text features make from vectorizers
 
 ### update:
+
+03/12/18 Revisit
+Added a new notebook with further exploration on feature engineering. 
+  - First Attempt to constraint some categorical features to a certain limit (too many categories will lead to overfitting)
+  - Second Attempt to treat some object data as text data, and vecotrize them using CountVectorizer and TfidfVectorizer
+  
+  By fine-tuning both approaches, they can help achieve a learderboard score ~ 0.180 - 0.184. Much better than the primary attempt wich has dropped a lot of columns during the cardinalities of many collumns are so large.
+
+~01/2018
 Added a new ipython notebook which added an exploration using XGBoost on the dataset at the end. The roc_auc score has a slight increase from 0.755 to 0.767 on the validation set.
