@@ -239,7 +239,7 @@ def preprocess2(df, train = True):
 	# df['Nationality'] = df['Nationality'].astype('category')
 	# df['Size'] = df['Size'].astype('category')
 	# df['TopThreeAmericanName'] = df['TopThreeAmericanName'].astype('category')
-	df['IsOnlineSale'] = df['IsOnlineSale'].astype('category')
+	# df['IsOnlineSale'] = df['IsOnlineSale'].astype('category')
 	df['Auction'] = df['Auction'].astype('category')
 	df['VehYear'] = df['VehYear'].astype('category')
 	# df['Transmission'] = df['Transmission'].astype('category')
@@ -249,4 +249,4 @@ def preprocess2(df, train = True):
 	df['PurchDayofweek'] = df['PurchDayofweek'].astype('category')
 
 	# drop unneeded cols
-	df.drop(['RefId', 'BYRNO', 'PRIMEUNIT', 'AUCGUART','SubModel', 'WheelTypeID', 'VNZIP1', 'PurchDate', 'VehicleAge','Model'], axis=1, inplace=True)
+	df.drop(['RefId', 'BYRNO', 'PRIMEUNIT', 'AUCGUART','SubModel', 'WheelTypeID', 'VNZIP1', 'VehicleAge','Model', 'IsOnlineSale'], axis=1, inplace=True)
