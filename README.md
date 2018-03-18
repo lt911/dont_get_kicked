@@ -9,7 +9,7 @@ Added a new notebook with further exploration on feature engineering.
   - First Attempt to constraint some categorical features to a certain limit (too many categories will lead to overfitting)
   - Second Attempt to treat some object data as text data, and vecotrize them using CountVectorizer and TfidfVectorizer
   
-  By fine-tuning both approaches, they can help achieve a learderboard score ~ 0.180 - 0.184. Much better than the primary attempt wich has dropped a lot of columns during the cardinalities of many collumns are so large.
+  By fine-tuning both approaches, they can help achieve a learderboard score of 0.23797 (** Note that the 1st place has a score of 0.26719). Much better than the primary attempt wich has dropped a lot of columns during the cardinalities of many collumns are so large.
   
   Change to evaluation metric to F1-score for the imbalanced class issue. 
   
